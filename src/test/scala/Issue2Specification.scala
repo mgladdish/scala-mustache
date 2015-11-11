@@ -1,7 +1,7 @@
 import org.specs2.mutable._
 import org.specs2.runner._
 
-package mustache {
+package com.vspy.mustache {
 object Issue2Specification extends SpecificationWithJUnit {
 
   "mustache" should {

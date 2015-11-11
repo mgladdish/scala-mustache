@@ -3,7 +3,7 @@ import org.specs2.runner._
 
 import java.security.MessageDigest
 
-package mustache {
+package com.vspy.mustache {
 object HelperSpecification extends SpecificationWithJUnit {
 
   object MD5 {

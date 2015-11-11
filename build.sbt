@@ -1,6 +1,10 @@
+lazy val root = (project in file(".")).enablePlugins(SbtOsgi)
+
+organization := "com.vspy"
+
 name := "mustache"
 
-version := "1.2"
+version := "1.3"
 
 scalaVersion := "2.11.1"
 
@@ -13,3 +17,8 @@ libraryDependencies ++= Seq(
   "org.specs2" %% "specs2" % "2.3.12" % "test->default",
   "com.typesafe.akka" %% "akka-actor" % "2.3.3" % "test->default"
 )
+
+
+osgiSettings
+
+OsgiKeys.exportPackage := Seq("com.vspy.mustache")

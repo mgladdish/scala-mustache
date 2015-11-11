@@ -1,6 +1,6 @@
 import scala.io.Source
 
-package mustache {
+package com.vspy.mustache {
 object PerformanceTest {
 
   def main(args: Array[String]) = 

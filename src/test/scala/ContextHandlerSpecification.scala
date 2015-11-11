@@ -4,7 +4,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import org.specs2.mutable._
 import org.specs2.runner._
 
-package mustache {
+package com.vspy.mustache {
 object ContextHandlerSpecification extends SpecificationWithJUnit {
 
   "context handler" should {

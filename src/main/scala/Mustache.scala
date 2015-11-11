@@ -5,7 +5,7 @@ import java.lang.reflect.{Field=>F,Method=>M}
 import scala.concurrent.{Await, Awaitable}
 import scala.concurrent.duration._
 
-package mustache {
+package com.vspy.mustache {
 
   case class MustacheParseException(line:Int, msg:String) 
     extends Exception("Line "+line+": "+msg)
