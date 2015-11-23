@@ -1,4 +1,5 @@
-lazy val root = (project in file(".")).enablePlugins(SbtOsgi)
+
+enablePlugins(SbtOsgi)
 
 organization := "com.vspy"
 
@@ -17,6 +18,12 @@ libraryDependencies ++= Seq(
   "org.specs2" %% "specs2" % "2.3.12" % "test->default",
   "com.typesafe.akka" %% "akka-actor" % "2.3.3" % "test->default"
 )
+
+bintrayOrganization := Some("uxforms")
+
+bintrayRepository := "releases"
+
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
 
 osgiSettings
