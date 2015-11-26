@@ -19,9 +19,9 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.3.3" % "test->default"
 )
 
-bintrayOrganization := Some("uxforms")
+bintrayOrganization := Some("equalexperts")
 
-bintrayRepository := "releases"
+bintrayRepository := "uxforms-releases"
 
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
