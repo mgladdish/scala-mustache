@@ -19,12 +19,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.3.3" % "test->default"
 )
 
-bintrayOrganization := Some("equalexperts")
-
-bintrayRepository := "uxforms-releases"
-
-licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-
+publishTo := Some("uxforms-public" at "s3://artifacts-public.uxforms.net")
 
 osgiSettings
 
